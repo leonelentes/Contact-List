@@ -1,0 +1,19 @@
+<input type="text" [(ngModule)]="FirstName" name="FirstName" placeholder="FirstName">
+<input type="text" [(ngModule)]="LastName" name="LastName" placeholder="LastName">
+<input type="text" [(ngModule)]="Phone" name="Phone" placeholder="Phone">
+<input type="text" [(ngModule)]="Mobile" name="Mobile " placeholder="Mobile">
+<input type="text" [(ngModule)]="E-mail" name="email" placeholder="Email">
+<input type="text" [(ngModule)]="Address" name="Address" placeholder="Address">
+<input type="submit" value="Add Details" (click)="Add Details ()">
+
+
+
+
+<ul *ngFor="Contact Lists | async ">
+  <li>
+    <strong>{{ContactList.FirstName}}</strong>
+    <br>
+    {{ContactList.LastName}}
+  </li>
+
+</ul>
